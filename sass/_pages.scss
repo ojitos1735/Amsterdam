@@ -1,0 +1,168 @@
+/* --- HABITACIONES - PROMOCIONES--- */
+.index__Hab{
+    .parallaxHab{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 10vh ;
+        text-align: center;
+    
+        .centrado__h1{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .pageHab {
+        border-radius: 1em;
+        width: 60%;
+        margin: 20px auto;
+        background-image: linear-gradient(to right top, #2d2d3b, #42424d, #58575f, #6f6e72, #868686);
+        color: #fff;
+        padding: 15px;
+    
+        .izquierda {
+        float: left;
+        margin-right: 40px;
+    }
+        h3{
+        font-size: 1.6em;
+        padding: 0.5em;
+    }
+        .reset {
+        clear: both;
+    }
+        p{
+        font-size: 0.7em;
+    }
+        ul li{
+        font-size: 0.7em;
+    }
+    }
+}
+
+
+/* --- UBICACION Y CONTACTO--- */
+
+/* --- contacto FORM--- */
+.contactoMap{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh ;
+    text-align: center;
+
+    .centrado__h1{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.contactoCen{
+    text-align: center;
+    object-position: 100px;
+}
+
+
+
+.containerCont {
+    padding: 15px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "formulario ubicacion"; 
+    form{
+        width: 600px;
+        margin: auto;
+        background-image: linear-gradient(to right top, #2d2d3b, #42424d, #58575f, #6f6e72, #868686);
+        color: #fff;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        border-radius: 5px;
+        text-align: center;
+    
+        input{
+            border-radius: 5px;
+        }
+    
+        textarea{
+            border-radius: 5px;
+        
+        }
+        div{
+            border-radius: 5px;
+        }
+        button{
+            border-radius: 10px;
+            border: #060505;
+            color: #ff7f50;
+            background-color: #fff;
+            align-content: center;
+        }
+    }
+
+}
+.formulario { 
+    grid-area: formulario;
+    
+}
+.ubicacion { 
+    grid-area: ubicacion; 
+}
+/* 
+#bt__form{
+    align-items: center;
+} */
+
+/* --- SERVICIOS --- */
+.servCen{
+    padding: 2rem;
+}
+
+div h3{
+    font-size: 1.8em;
+}
+
+/* --- MEDIA --- */
+
+
+.boxMedia, .boxMedia1 {
+    text-align: center;
+    display:inline-block;
+    margin: 4em;
+    max-width: 1200px;
+    flex: content;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    width: 500px;
+    box-shadow: 10px 5px 10px 4px #6a6a87;
+    border-radius:15px;
+    font-family: sans-serif;
+    background-color: rgb(49, 48, 48);
+    color: #fff;
+    padding: 3px;
+    
+    display: grid;
+
+}
+
+.serviceContainer {  
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "boxMedia boxMedia1";
+}
+
+.boxMedia { grid-area: boxMedia; }
+
+.boxMedia1 { grid-area: boxMedia1; }

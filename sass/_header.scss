@@ -1,0 +1,38 @@
+.header{
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    
+    nav{
+        background-color: #3e3b3b;
+        background-size: cover;
+        height: 60px;
+
+        a:hover{
+            color: brown;
+        }
+
+        img{
+            margin-left: 1rem;
+        }
+        
+        ul{
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+            li{
+                
+                display: inline;
+                text-decoration: none;
+                margin: 1em 1em 1em 1em;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                font-weight: 500; /* grosor letra */
+                line-height: 2.5em; /* espacio arriba y abajo letra */
+
+                
+            }
+        }
+    }
+    
+}

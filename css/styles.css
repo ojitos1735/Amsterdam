@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    overflow: ;
 }
 
 body{
@@ -16,6 +17,9 @@ body{
 
 header{
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    
 }
 
 nav{
@@ -24,9 +28,14 @@ nav{
     height: 60px;
 }
 
+
 /* .navbar-expand .navbar-collapse{
     height: 60px;
 } */
+nav a:hover{
+    color: brown;
+}
+
 
 nav img{
     margin-left: 1rem;
@@ -50,9 +59,7 @@ nav ul li{
 
 }
 
-nav a:hover{
-    color: brown;
-}
+
 
 /* --- FOOTER--- */
 
@@ -93,7 +100,7 @@ footer {
 
 /* --- INDEX --- */
 .parallax{
-    background-image: url("../assets/img/imagenesCarrusel/gal_2.jpg");
+    background-image: url("../assets/img/main/index.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

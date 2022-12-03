@@ -1,0 +1,192 @@
+//vars
+@import 'vars';
+//tags globales
+@import 'header';
+//pag interiores
+@import 'pages';
+//responsive
+@import 'media';
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+body{
+    margin: 0
+}
+
+/* --- INDEX --- */
+
+.index{
+    .parallax{
+        background-image: url("../assets/img/main/index.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height:70vh ;
+        text-align: center;
+    
+        .centrado{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .ntroHotel{
+        font-size: 1em;
+        padding: 4em 5em 4em 5em;
+        text-align: justify;
+    }
+    
+    .indexService{
+        text-align: center;
+        border: solid 1em white;
+        display:inline-block;
+        padding: 2em;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: stretch;
+        width:22rem;
+        height: 20rem;
+        border: 1px solid lightgray;
+        box-shadow: 10px 2px 10px 4px #6a6a87;
+        border-radius:15px;
+        font-family: sans-serif;
+        margin: 1em 1em 1em 1em;
+        border-style: outset;
+        overflow: auto;
+        
+        .titulo{
+            background-color:#9fa1ac;
+            font-size: 1.3rem;
+            padding: 8px 8px 8px 8px;
+            }
+        
+        .cuerpo{
+            padding: 10px;
+            }
+        }
+/* --- INDEX HABITACIONES --- */
+    .habitaciones{
+        .indexHab{
+            text-align: center;
+            border: solid 1em white;
+            display:inline-block;
+            margin: 3em;
+            display:inline-block;
+            max-width: 1200px;
+            flex: content;
+            flex-wrap: wrap;
+            flex-direction:column;
+            justify-content: center;
+            width: 400px;
+            border: 1px solid lightgray;
+            box-shadow: 10px 2px 10px 4px #6a6a87;
+            border-radius:15px;
+            font-family: sans-serif;
+            overflow: auto;
+    
+            .titHab{
+            font-size: 24px;
+            padding: 15px 10px 15px 10px;;
+        }
+            .cuerpoHab{
+            padding: 10px;
+        } 
+        } 
+        
+    }
+/* --- INDEX CARRUSEL --- */
+
+    .imagenes{
+        display: inline-block;
+    }
+    carousel-inner{
+    width: 700px;
+    padding: 5px;
+    }
+
+        
+}
+
+.index__Serv{
+    .parallaxServ{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 60vh ;
+        text-align: center;
+    
+        .centrado__h1{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+}
+
+/* --- FOOTER--- */
+
+footer {
+    text-align: center;
+    background-color: rgb(44, 43, 43);
+    padding: 32px 48px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "redes log adress";
+    }
+    redes { 
+        grid-area: redes; }
+    
+    log { 
+        grid-area: log; 
+    }
+    
+    adress { 
+        grid-area: adress; 
+    }
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #ff7f50;
+    text-shadow: 3px 3px 10px #060505;
+    padding: 1px 1px 5px 1px;
+    font-size: 4em;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 5px #7ca1a5;
+    color: #ff7f50;
+    text-align: center;
+    padding: 1em;
+}
+
